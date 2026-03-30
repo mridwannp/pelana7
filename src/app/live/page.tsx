@@ -16,7 +16,7 @@ export default function LivePage() {
           </div>
           <div className="p-5 md:p-6">
             <p className="mono-kicker">On Stream</p>
-            <h2 className="mt-2 text-3xl font-semibold">{liveNow.title}</h2>
+            <h2 className="mt-2 text-2xl font-semibold sm:text-3xl">{liveNow.title}</h2>
             <p className="mt-3 text-sm leading-7 text-[var(--muted)]">{liveNow.summary}</p>
             <div className="mt-4 flex flex-wrap gap-2">
               <span className="pill-outline">{liveNow.start}</span>
@@ -30,8 +30,8 @@ export default function LivePage() {
           <p className="mono-kicker">Recent Live</p>
           <div className="mt-4 grid gap-3">
             {recentLive.map((item) => (
-              <div key={item.title} className="grid grid-cols-[110px_1fr] gap-3 border border-[var(--line)] p-3">
-                <div className="relative h-20">
+              <div key={item.title} className="grid grid-cols-1 gap-3 border border-[var(--line)] p-3 sm:grid-cols-[110px_1fr]">
+                <div className="relative h-28 sm:h-20">
                   <Image src={item.image} alt={item.title} fill className="object-cover" />
                 </div>
                 <div>

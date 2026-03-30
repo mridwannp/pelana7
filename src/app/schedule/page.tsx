@@ -11,7 +11,10 @@ export default function SchedulePage() {
       <section className="surface-card p-5 md:p-6">
         <div className="grid gap-3 md:grid-cols-2">
           {schedule.map((slot) => (
-            <div key={slot} className="flex items-center justify-between border border-[var(--line)] px-4 py-3">
+            <div
+              key={slot}
+              className="flex flex-col items-start gap-2 border border-[var(--line)] px-4 py-3 sm:flex-row sm:items-center sm:justify-between"
+            >
               <span className="font-mono text-xs uppercase tracking-[0.14em]">{slot}</span>
               <span className="pill-outline">On Air</span>
             </div>
