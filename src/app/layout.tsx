@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { SiteMobileNav } from "@/components/site-mobile-nav";
 
 export const metadata: Metadata = {
   title: "PELANA TUJUH",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <SiteHeader />
         <div className="flex-1">{children}</div>
         <SiteFooter />
+        <SiteMobileNav />
       </body>
     </html>
   );

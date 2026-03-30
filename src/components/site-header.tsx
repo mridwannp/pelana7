@@ -58,8 +58,13 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {menuOpen && (
-        <nav className="border-t border-[var(--line)] px-4 py-3 md:hidden">
+      <div
+        className={`grid transition-all duration-300 ease-out md:hidden ${
+          menuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+        aria-hidden={!menuOpen}
+      >
+        <nav className="overflow-hidden border-t border-[var(--line)] px-4 py-3">
           <div className="mx-auto grid w-full max-w-6xl grid-cols-2 gap-2">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -80,7 +85,7 @@ export function SiteHeader() {
             })}
           </div>
         </nav>
-      )}
+      </div>
     </header>
   );
 }

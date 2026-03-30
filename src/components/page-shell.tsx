@@ -9,7 +9,7 @@ type PageShellProps = {
 
 export function PageShell({ title, kicker, description, children }: PageShellProps) {
   return (
-    <main className="grid-overlay min-h-[calc(100vh-124px)]">
+    <main className="grid-overlay min-h-[calc(100vh-124px)] pb-24 md:pb-0">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-6 md:gap-8 md:px-10 md:py-10">
         <section className="surface-card p-5 md:p-8">
           <p className="mono-kicker">{kicker}</p>
