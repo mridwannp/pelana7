@@ -24,11 +24,17 @@ export type ReplayItem = MediaItem & {
   published: string;
 };
 
+export type MediaArchiveItem = MediaItem & {
+  date: string;
+  format: "Photo Story" | "Aftermovie" | "Gallery";
+  summary: string;
+};
+
 export const navItems: NavItem[] = [
   { href: "/", label: "Dashboard" },
   { href: "/news", label: "News" },
   { href: "/live", label: "Live" },
-  { href: "/replay", label: "Replay" },
+  { href: "/archive", label: "Archive" },
   { href: "/events", label: "Events" },
   { href: "/programs", label: "Programs" },
   { href: "/schedule", label: "Schedule" },
@@ -38,7 +44,7 @@ export const navItems: NavItem[] = [
 export const dashboardStats = [
   { label: "Events This Week", value: "07" },
   { label: "Live Sets / Week", value: "11" },
-  { label: "Replay Library", value: "48" },
+  { label: "Archive Items", value: "86" },
   { label: "Creative Partners", value: "17" },
 ];
 
@@ -160,6 +166,30 @@ export const replayVideos: ReplayItem[] = [
     duration: "47:33",
     published: "16 Mar 2026",
     image: "https://picsum.photos/seed/pelana-replay-4/800/500",
+  },
+];
+
+export const mediaArchiveItems: MediaArchiveItem[] = [
+  {
+    title: "Open Deck Community Night Photo Story",
+    date: "06 Apr 2026",
+    format: "Photo Story",
+    summary: "A visual recap featuring crowd interaction, booth moments, and behind-the-scenes prep.",
+    image: "https://picsum.photos/seed/pelana-archive-1/1200/750",
+  },
+  {
+    title: "Visual Jam Session Aftermovie",
+    date: "13 Apr 2026",
+    format: "Aftermovie",
+    summary: "Short-form cut of the visual projection session and live improvisation highlights.",
+    image: "https://picsum.photos/seed/pelana-archive-2/1200/750",
+  },
+  {
+    title: "Radio Residency Showcase Gallery",
+    date: "19 Apr 2026",
+    format: "Gallery",
+    summary: "Curated still frames from residency performances and interview segments.",
+    image: "https://picsum.photos/seed/pelana-archive-3/1200/750",
   },
 ];
 

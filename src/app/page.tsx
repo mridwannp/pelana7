@@ -8,7 +8,7 @@ export default function DashboardPage() {
     <PageShell
       kicker="Bandung"
       title="Pelana Tujuh"
-      description="A quick daily overview of Pelana Tujuh: active streams, latest editorial updates, upcoming events, and selected replay sessions."
+      description="A quick daily overview of Pelana Tujuh: active streams, latest editorial updates, upcoming events, and selected archive sessions."
     >
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {dashboardStats.map((item) => (
@@ -85,9 +85,9 @@ export default function DashboardPage() {
 
         <article className="surface-card p-5 md:p-6">
           <div className="flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
-            <p className="mono-kicker">Replay Picks</p>
-            <Link href="/replay" className="pill-outline">
-              Replay
+            <p className="mono-kicker">Archive Picks</p>
+            <Link href="/archive/replay" className="pill-outline">
+              Archive
             </Link>
           </div>
           <div className="mt-4 grid gap-3">
