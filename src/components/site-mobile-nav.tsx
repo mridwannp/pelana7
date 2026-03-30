@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 const quickNav = [
   {
@@ -57,9 +58,35 @@ const quickNav = [
 
 export function SiteMobileNav() {
   const pathname = usePathname();
+  const [visible, setVisible] = useState(true);
+  const lastY = useRef(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      const delta = currentY - lastY.current;
+
+      if (currentY < 24) {
+        setVisible(true);
+      } else if (delta > 8) {
+        setVisible(false);
+      } else if (delta < -8) {
+        setVisible(true);
+      }
+
+      lastY.current = currentY;
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--line)] bg-[color-mix(in_oklab,var(--background)_90%,transparent)] backdrop-blur md:hidden">
+    <nav
+      className={`fixed inset-x-0 bottom-0 z-40 border-t border-[var(--line)] bg-[color-mix(in_oklab,var(--background)_90%,transparent)] backdrop-blur transition-transform duration-300 md:hidden ${
+        visible ? "translate-y-0" : "translate-y-full"
+      }`}
+    >
       <div className="mx-auto grid w-full max-w-6xl grid-cols-5 px-2 py-2">
         {quickNav.map((item) => {
           const isActive = pathname === item.href;
