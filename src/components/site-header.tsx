@@ -17,17 +17,17 @@ export function SiteHeader() {
           PELANA TUJUH
         </Link>
 
-        <nav className="ml-auto hidden flex-wrap items-center gap-1 md:flex">
+        <nav className="ml-auto hidden flex-wrap items-center gap-4 md:flex">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`rounded-sm border px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] transition ${
+                className={`font-mono text-[11px] uppercase tracking-[0.18em] transition ${
                   isActive
-                    ? "border-[var(--foreground)] bg-[var(--surface-alt)] text-[var(--foreground)]"
-                    : "border-transparent text-[var(--muted)] hover:border-[var(--line)] hover:text-[var(--foreground)]"
+                    ? "text-[var(--foreground)]"
+                    : "text-[var(--muted)] hover:text-[var(--foreground)]"
                 }`}
               >
                 {item.label}
