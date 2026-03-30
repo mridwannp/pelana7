@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#10131A"/>
+  <rect x="120" y="100" width="560" height="300" fill="#252934"/>
+  <circle cx="400" cy="250" r="62" fill="#F07D72" fill-opacity="0.55"/>
+  <text x="40" y="470" fill="#F3F5F7" font-size="36" font-family="Arial">REPLAY 03</text>
+</svg>

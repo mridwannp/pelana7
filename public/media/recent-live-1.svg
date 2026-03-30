@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#11141B"/>
+  <path d="M0 360L180 280L380 330L610 220L800 290V500H0V360Z" fill="#EB4D3D" fill-opacity="0.3"/>
+  <text x="40" y="80" fill="#F3F5F7" font-size="44" font-family="Arial">RECENT LIVE 01</text>
+</svg>

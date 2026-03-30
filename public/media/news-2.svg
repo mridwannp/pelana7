@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <rect width="1200" height="750" fill="#12141A"/>
+  <rect x="0" y="0" width="1200" height="750" fill="url(#g)" fill-opacity="0.55"/>
+  <rect x="80" y="540" width="520" height="24" fill="#F3F5F7" fill-opacity="0.9"/>
+  <rect x="80" y="580" width="360" height="14" fill="#989FB0"/>
+  <text x="80" y="120" fill="#F3F5F7" font-size="66" font-family="Arial" letter-spacing="6">NEWS 02</text>
+  <defs>
+    <linearGradient id="g" x1="150" y1="80" x2="1080" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EB4D3D"/>
+      <stop offset="1" stop-color="#252934"/>
+    </linearGradient>
+  </defs>
+</svg>

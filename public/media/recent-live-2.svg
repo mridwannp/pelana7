@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0E1015"/>
+  <circle cx="610" cy="140" r="160" fill="#F07D72" fill-opacity="0.25"/>
+  <rect x="0" y="350" width="800" height="150" fill="#252934" fill-opacity="0.7"/>
+  <text x="40" y="80" fill="#F3F5F7" font-size="44" font-family="Arial">RECENT LIVE 02</text>
+</svg>

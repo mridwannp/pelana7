@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#12141A"/>
+  <rect x="70" y="70" width="660" height="360" stroke="#252934" stroke-width="2"/>
+  <circle cx="400" cy="250" r="80" fill="#EB4D3D" fill-opacity="0.3"/>
+  <polygon points="378,215 378,285 438,250" fill="#F3F5F7"/>
+  <text x="40" y="470" fill="#F3F5F7" font-size="36" font-family="Arial">REPLAY 01</text>
+</svg>
