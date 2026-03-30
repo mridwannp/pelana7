@@ -41,7 +41,7 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => setMenuOpen((prev) => !prev)}
-            className="icon-button md:hidden"
+            className="icon-button md:!hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
           >
